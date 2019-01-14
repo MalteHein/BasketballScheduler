@@ -24,5 +24,10 @@ namespace BasketballScheduler
         {
             InitializeComponent();
         }
+
+        private void TextBox_SourceUpdated(object sender, DataTransferEventArgs e)
+        {
+
+        }
     }
 }
