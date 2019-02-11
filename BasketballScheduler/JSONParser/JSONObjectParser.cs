@@ -14,11 +14,14 @@ namespace BasketballScheduler.JSONParser
         public JSONObjectParser(string JSONString)
         {
             JObject jObject = JObject.Parse(JSONString);
-            JToken jUser = jObject["roster"];
-            foreach (JToken item in jUser.Children())
-            {
+            JToken jRoster = jObject["roster"];
+            // Init Teams 
+            foreach (JToken item in jRoster.Children())
+            { 
+                // Unterscheidung via Teamname (Attribut)
                 //Player p = new Player();
                 //p.
+                // Füge Spielerliste Teams hinzu
             }
         }
     }
