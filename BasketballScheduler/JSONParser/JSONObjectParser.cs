@@ -17,7 +17,8 @@ namespace BasketballScheduler.JSONParser
             JToken jUser = jObject["roster"];
             foreach (JToken item in jUser.Children())
             {
-                //Player 
+                //Player p = new Player();
+                //p.
             }
         }
     }
