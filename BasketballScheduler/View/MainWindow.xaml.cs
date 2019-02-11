@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using BasketballScheduler.JSONParser;
 
 namespace BasketballScheduler
 {
@@ -23,11 +24,7 @@ namespace BasketballScheduler
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void TextBox_SourceUpdated(object sender, DataTransferEventArgs e)
-        {
-
+            JSONObjectParser p = new JSONParser.JSONObjectParser(@"{""user"":[{""name"":""asdf""}, {""name"":""blabla""}]}");
         }
     }
 }
