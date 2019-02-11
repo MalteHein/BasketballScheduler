@@ -29,10 +29,25 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
+
+            <Image Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="0" Grid.RowSpan="1" HorizontalAlignment="Center" />
             <Label Content="Team1" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="1" Grid.RowSpan="1" HorizontalAlignment="Center" FontSize="30" />
             <Label Content="Score:" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="2" Grid.RowSpan="1" FontFamily="Arial" FontSize="20" VerticalAlignment="Center"/>
             <xctk:IntegerUpDown Value="0" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="2" Grid.RowSpan="1" Margin="70,0,0,0" FontSize="20" VerticalAlignment="Center"/>
-            <xctk:TimeSpanUpDown Value="00:00:00"/>
+            <Label Content="Foul:" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="3" Grid.RowSpan="1" FontFamily="Arial" FontSize="20" VerticalAlignment="Center"/>
+            <xctk:IntegerUpDown Value="0" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="3" Grid.RowSpan="1" Margin="70,0,0,0" FontSize="20" VerticalAlignment="Center"/>
+
+            <xctk:TimeSpanUpDown Value="10:00:00" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="1" Grid.RowSpan="1" FontSize="48" VerticalAlignment="Center" Height="62" FontWeight="Bold" TextOptions.TextFormattingMode="Display" TextOptions.TextHintingMode="Animated" TextAlignment="Center" Margin="10,0"/>
+            <Button Content="Start / Stop" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="2" Grid.RowSpan="1" FontSize="20" VerticalAlignment="Center" Height="62" Margin="10,0"/>
+
+            <Image Grid.Column="2" Grid.ColumnSpan="1" Grid.Row="0" Grid.RowSpan="1" HorizontalAlignment="Center" />
+            <Label Content="Team2" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="1" Grid.RowSpan="1" HorizontalAlignment="Center" FontSize="30" />
+            <Label Content="Score:" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="2" Grid.RowSpan="1" FontFamily="Arial" FontSize="20" VerticalAlignment="Center"/>
+            <xctk:IntegerUpDown Value="0" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="2" Grid.RowSpan="1" Margin="70,0,0,0" FontSize="20" VerticalAlignment="Center"/>
+            <Label Content="Foul:" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="3" Grid.RowSpan="1" FontFamily="Arial" FontSize="20" VerticalAlignment="Center"/>
+            <xctk:IntegerUpDown Value="0" Grid.Column="3" Grid.ColumnSpan="1" Grid.Row="3" Grid.RowSpan="1" Margin="70,0,0,0" FontSize="20" VerticalAlignment="Center"/>
         </Grid>
+        <DataGrid Name="DataGridTeam1" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="1" Grid.RowSpan="1" />
+        <DataGrid Name="DataGridTeam2" Grid.Column="1" Grid.ColumnSpan="1" Grid.Row="1" Grid.RowSpan="1" />
     </Grid>
 </Window>
