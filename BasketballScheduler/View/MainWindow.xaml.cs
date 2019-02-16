@@ -24,7 +24,6 @@ namespace BasketballScheduler
         public MainWindow()
         {
             InitializeComponent();
-            JSONObjectParser p = new JSONParser.JSONObjectParser(@"{""user"":[{""name"":""asdf""}, {""name"":""blabla""}]}");
         }
     }
 }
